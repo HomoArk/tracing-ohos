@@ -1,5 +1,5 @@
 //! OpenHarmony's logging backend for tracing.
-use hilog_sys::{LogLevel, LogType, OH_LOG_Print, OH_LOG_IsLoggable};
+use hilog_sys::{LogLevel, LogType, OH_LOG_Print};
 use std::{
     ffi::{CStr, CString},
     io::{self, BufWriter},
@@ -69,7 +69,7 @@ impl<'a> OHOSWriter<'a> {
                 Level::ERROR => LogLevel::LOG_ERROR,
                 Level::TRACE => LogLevel::LOG_DEBUG,
             },
-            domain: 0,
+            domain,
             tag,
         };
         let inner = BufWriter::with_capacity(LOGGING_MSG_MAX_LEN, w);
