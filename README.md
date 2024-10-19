@@ -19,7 +19,7 @@ Constructs a `Layer` with the given `tag`.
  use tracing_subscriber::layer::SubscriberExt;
  use tracing_subscriber::util::SubscriberInitExt;
 
- let ohrs_writer_layer = tracing_ohos::layer(0x0000, "homogrape")?;
+ let ohrs_writer_layer = tracing_ohos::layer(0x0000, "TAG")?;
 
  tracing_subscriber::registry()
     .with(ohrs_writer_layer)
