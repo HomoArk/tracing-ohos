@@ -3,10 +3,12 @@ name = "tracing-ohos"
 version = "0.1.0"
 edition = "2021"
 authors = ["Xiangyi Meng <xymeng16@gmail.com>"]
-license = "Apache-2.0"
+license = "MIT OR Apache-2.0"
 keywords = ["tracing", "harmonyos", "openharmony","log"]
-description = "Tracing layer to log to hilog"
+categories = ["development-tools::debugging"]
+description = "Tracing layer to log to OpenHarmony's HiLog"
 repository = "https://github.com/HomoArk/tracing-ohos"
+readme = "README.md"
 
 [dependencies]
 hilog-sys = "0.1.2"
