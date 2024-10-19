@@ -15,7 +15,7 @@ License: MIT OR Apache-2.0
 
 ## Example
 Constructs a [`layer::Layer`] with the given `tag`.
-```no_run
+```rust
  use tracing_subscriber::layer::SubscriberExt;
  use tracing_subscriber::util::SubscriberInitExt;
 
