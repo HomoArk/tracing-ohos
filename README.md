@@ -14,7 +14,7 @@ License: MIT OR Apache-2.0
 [tracing-android]: https://crates.io/crates/tracing-android
 
 ## Example
-Constructs a [`layer::Layer`] with the given `tag`.
+Constructs a `Layer` with the given `tag`.
 ```rust
  use tracing_subscriber::layer::SubscriberExt;
  use tracing_subscriber::util::SubscriberInitExt;
